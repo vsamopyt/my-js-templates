@@ -1,0 +1,27 @@
+.tabs {
+    width:100%;
+    min-height:16px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+.tab-header {
+    display: inline-block;
+    min-width:50px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    /* border-bottom: none; */
+    cursor: pointer;
+}
+
+.tab-text {
+    display:none;
+    border: 1px solid black;
+    padding: 0.5rem
+}
+
+.tab-text.one {
+    display:block
+}

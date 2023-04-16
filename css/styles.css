@@ -1,0 +1,160 @@
+
+/* html {
+    font-size: 16px;
+} */
+
+:root{
+    --container-width: 350px;
+    --container-height: 560px;
+    --border-radius:10px;
+    --background-color-main: rgb(254, 254, 254);
+    --background-color-button: rgb(229, 220, 249);
+    --border-color-shape: rgb(198, 196, 196);
+    --border-color-bottom: rgb(229, 220, 249);
+
+}
+
+
+/* structure of slider */
+html {box-sizing:border-box;}
+
+.container {
+    width: var(--container-width);
+    min-height: var( --container-height);
+    border: 1px solid var(--border-color-shape);
+    margin: 60px auto;
+    border-radius: 10px;
+    /* position: relative; */
+    overflow: hidden;
+
+}
+
+.main {
+    width: calc(var(--container-width)*2);
+    min-height: 200px;
+    height: var( --container-height);
+    border-radius: 10px;
+    background-color:  var(--background-color-main);
+    transition: all ease 1s;
+    
+}
+
+.left,.right {
+    width: 50%;
+    min-height: 200px;
+    height: var( --container-height);
+    float: left;
+}
+
+.right {
+    background-color: var(--background-color-main);
+    overflow-y: scroll;
+  
+}
+
+.read-rules {
+    cursor: pointer;
+}
+.back {
+    cursor: pointer;
+}
+
+p {
+    margin-inline: 20px;
+    text-align: justify;
+}
+
+
+/* element of form */
+.modal-windows .form {
+    font-size: 1.1rem;
+    padding-inline: 5%;
+    /* line-height: 2em; */
+}
+ul { 
+    list-style: none;
+    padding:0;
+    text-align: center;
+}
+
+.list-form li {
+    margin-top: 2em;
+} 
+
+.input-enter {
+    width:90% ;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid  var(--border-color-bottom);
+    font-size: 1.1rem;
+    line-height: 2em;
+    outline: none;
+    
+}
+
+/* radio buttons */
+/* .item-sex {
+    padding-inline:10px;
+} */
+
+.fieldeset-sex {
+    border: 1px solid var(--border-color-shape);
+    border-radius: 5px;
+    padding:1rem 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-inline:5px; */
+    text-align: left;
+}
+
+
+.conatiner-radio-sex {
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+/* checkbox and button */
+
+.checkbox-rules,.item.button {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.checkbox {
+    transform:scale(1.2);
+    margin-right: 0.5rem;
+}
+
+.read-rules {
+    text-decoration: underline;
+    color: blue;
+    }
+
+.item.button {
+    margin-bottom: 20px;
+}
+
+.item >.button {
+    font-size: inherit;
+    border: 1px solid var(--border-color-shape);
+    background-color: var(--background-color-button); 
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+}
+
+.slider-signin {
+    display: none;
+}
+
+
+/*  modal window log in*/
+
+.modal.container.login {
+    min-height: 200px;
+    background-color:  var(--background-color-main);
+}
+.section-login {
+    display: none;
+}
+
